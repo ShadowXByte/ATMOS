@@ -312,8 +312,13 @@ export default function Home() {
           </div>
         )}
 
-        <footer className="text-center text-white/80 mt-8 text-sm">
-          <p>Powered by Open-Meteo API</p>
+        <footer className="text-center mt-8">
+          <div className="mb-2">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 text-2xl font-bold tracking-wider drop-shadow-lg">
+              ✨ ShadowXByte ✨
+            </span>
+          </div>
+          <p className="text-white/60 text-xs">Powered by Open-Meteo API</p>
         </footer>
       </div>
     </main>
