@@ -313,7 +313,7 @@ export default function Home() {
         )}
 
         <footer className="text-center text-white/80 mt-8 text-sm">
-          <p>Powered by OpenWeatherMap API</p>
+          <p>Powered by Open-Meteo API</p>
         </footer>
       </div>
     </main>

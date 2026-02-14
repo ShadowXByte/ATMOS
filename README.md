@@ -18,7 +18,7 @@ A modern, responsive weather web application built with Next.js and deployed on 
 - **Framework**: Next.js 14 (App Router)
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
-- **API**: OpenWeatherMap API
+- **API**: Open-Meteo (Free, No API Key Required)
 - **Deployment**: Vercel
 
 ## Getting Started
@@ -26,7 +26,6 @@ A modern, responsive weather web application built with Next.js and deployed on 
 ### Prerequisites
 
 - Node.js 18+ installed
-- OpenWeatherMap API key (free tier available)
 
 ### Installation
 
@@ -41,28 +40,14 @@ cd ATMOS
 npm install
 \`\`\`
 
-3. Create a \`.env.local\` file in the root directory:
-\`\`\`bash
-cp .env.example .env.local
-\`\`\`
-
-4. Add your OpenWeatherMap API key to \`.env.local\`:
-\`\`\`env
-OPENWEATHER_API_KEY=your_api_key_here
-\`\`\`
-
-To get a free API key:
-- Visit [OpenWeatherMap](https://openweathermap.org/api)
-- Sign up for a free account
-- Navigate to API keys section
-- Copy your API key
-
-5. Run the development server:
+3. Run the development server:
 \`\`\`bash
 npm run dev
 \`\`\`
 
-6. Open [http://localhost:3000](http://localhost:3000) in your browser
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
+
+**Note**: No API key required! The app uses the free Open-Meteo API.
 
 ## Deployment on Vercel
 
@@ -72,10 +57,7 @@ npm run dev
 2. Visit [Vercel](https://vercel.com)
 3. Click "Import Project"
 4. Select your GitHub repository
-5. Add environment variable:
-   - Key: \`OPENWEATHER_API_KEY\`
-   - Value: Your OpenWeatherMap API key
-6. Click "Deploy"
+5. Click "Deploy"
 
 ### Option 2: Deploy via Vercel CLI
 
@@ -94,12 +76,7 @@ vercel login
 vercel
 \`\`\`
 
-4. Add environment variable:
-\`\`\`bash
-vercel env add OPENWEATHER_API_KEY
-\`\`\`
-
-5. Deploy to production:
+4. Deploy to production:
 \`\`\`bash
 vercel --prod
 \`\`\`
@@ -171,9 +148,7 @@ Fetch 5-day weather forecast
 
 ## Environment Variables
 
-| Variable | Description | Required |
-|----------|-------------|----------|
-| \`OPENWEATHER_API_KEY\` | Your OpenWeatherMap API key | Yes |
+**No environment variables required!** The app uses the free Open-Meteo API which doesn't require authentication.
 
 ## Browser Support
 
@@ -198,7 +173,7 @@ This project is open source and available under the MIT License.
 
 ## Acknowledgments
 
-- Weather data provided by [OpenWeatherMap](https://openweathermap.org/)
+- Weather data provided by [Open-Meteo](https://open-meteo.com/) (Free Weather API)
 - Built with [Next.js](https://nextjs.org/)
 - Styled with [Tailwind CSS](https://tailwindcss.com/)
 - Deployed on [Vercel](https://vercel.com/)
