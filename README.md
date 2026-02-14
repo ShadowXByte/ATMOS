@@ -49,38 +49,6 @@ npm run dev
 
 **Note**: No API key required! The app uses the free Open-Meteo API.
 
-## Deployment on Vercel
-
-### Option 1: Deploy via Vercel Dashboard
-
-1. Push your code to GitHub
-2. Visit [Vercel](https://vercel.com)
-3. Click "Import Project"
-4. Select your GitHub repository
-5. Click "Deploy"
-
-### Option 2: Deploy via Vercel CLI
-
-1. Install Vercel CLI:
-\`\`\`bash
-npm install -g vercel
-\`\`\`
-
-2. Login to Vercel:
-\`\`\`bash
-vercel login
-\`\`\`
-
-3. Deploy:
-\`\`\`bash
-vercel
-\`\`\`
-
-4. Deploy to production:
-\`\`\`bash
-vercel --prod
-\`\`\`
-
 ## Project Structure
 
 \`\`\`
